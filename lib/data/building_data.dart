@@ -29,16 +29,16 @@ final List<BuildingInfo> buildingData = [
     ),
   ),
   BuildingInfo(
-    name: 'Brooks',
+    name: 'Brooke',
     standardDirections:
-        "The Brooks Building is on the Birley Campus. "
+        "The Brooke Building is on the Birley Campus. "
         "When you arrive at the front of the building, use the main entrance.",
     accessibleDirections:
-        "The Brooks Building is on the Birley Campus. "
+        "The Brooke Building is on the Birley Campus. "
         "The accessible entrance is at the front of the building opposite Birley Campus, next to the rotating doors. "
         "Once inside, the lifts are straight on and then to the right.",
     mapsUrl: Uri.parse(
-      'https://www.google.com/maps/search/?api=1&query=Manchester+Metropolitan+University+Brooks+Building',
+      'https://www.google.com/maps/search/?api=1&query=Manchester+Metropolitan+University+Brooke+Building',
     ),
   ),
   BuildingInfo(
