@@ -34,7 +34,8 @@ class BuildingSelectionScreen extends StatelessWidget {
                   const Icon(
                     Icons.apartment,
                     size: 70,
-                    color: Color(0xFFF0B323),
+                    // Matches the primary action colour used across the NAVBOT interface.
+                    color: Color(0xFFFF6B00),
                   ),
                   const SizedBox(height: 20),
                   const Text(

@@ -18,7 +18,8 @@ class NavBotButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFFF0B323),
+          // Orange is used for primary actions to stand out against the NAVBOT navy background.
+          backgroundColor: const Color(0xFFFF6B00),
           foregroundColor: Colors.black,
           elevation: 4,
           shadowColor: Colors.black26,

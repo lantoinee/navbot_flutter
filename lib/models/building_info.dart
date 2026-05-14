@@ -12,6 +12,7 @@ class BuildingInfo {
   });
 
   String directionsFor({required bool accessibilityNeeded}) {
+    // A single lookup method keeps the UI simple while switching between standard and step-free route guidance.
     return accessibilityNeeded ? accessibleDirections : standardDirections;
   }
 }

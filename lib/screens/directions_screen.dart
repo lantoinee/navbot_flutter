@@ -21,6 +21,7 @@ class DirectionsScreen extends StatelessWidget {
     final launched = await mapLauncherService.open(building.mapsUrl);
 
     if (!launched && context.mounted) {
+      // If the external maps app cannot open, keep the user informed without leaving this screen.
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Could not open Google Maps on this device.'),
@@ -50,7 +51,8 @@ class DirectionsScreen extends StatelessWidget {
                   const Icon(
                     Icons.map,
                     size: 70,
-                    color: Color(0xFFF0B323),
+                    // Matches the primary action colour used across the NAVBOT interface.
+                    color: Color(0xFFFF6B00),
                   ),
                   const SizedBox(height: 20),
                   Text(
@@ -64,6 +66,7 @@ class DirectionsScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
                   Text(
+                    // Chooses the appropriate directions after the accessibility question has been answered.
                     building.directionsFor(
                       accessibilityNeeded: accessibilityNeeded,
                     ),

@@ -20,7 +20,8 @@ class WelcomeScreen extends StatelessWidget {
                 const Icon(
                   Icons.location_on,
                   size: 80,
-                  color: Color(0xFFF0B323),
+                  // Matches the primary action colour used across the NAVBOT interface.
+                  color: Color(0xFFFF6B00),
                 ),
                 const SizedBox(height: 24),
                 const Text(
@@ -45,6 +46,7 @@ class WelcomeScreen extends StatelessWidget {
                 NavBotButton(
                   text: 'Start Navigation',
                   onPressed: () {
+                    // Accessibility is checked before building selection so the app can plan around barriers early.
                     Navigator.push(
                       context,
                       MaterialPageRoute(

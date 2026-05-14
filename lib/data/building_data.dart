@@ -8,7 +8,8 @@ final List<BuildingInfo> buildingData = [
         "If you are coming through the main campus area, head towards the front of the building.",
     accessibleDirections:
         "The Library is on the All Saints Campus near Oxford Road. "
-        "If you are coming from Zaytoni's on Oxford Road, the accessible ramp is on the left-hand side of the building. "
+        // Uses Tesco Extra as a visible landmark to help users identify the step-free ramp from Oxford Road.
+        "If you are coming from Oxford Road, the accessible ramp is on the left-hand side of the building, parallel to Tesco Extra. "
         "This provides a step-free entrance. Once you go through the ID gates, the lifts are on the right.",
     mapsUrl: Uri.parse(
       'https://www.google.com/maps/search/?api=1&query=Manchester+Metropolitan+University+Library',
